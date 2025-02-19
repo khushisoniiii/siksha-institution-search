@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+ES+Deco+Guides&family=Rubik+Vinyl&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   
+   
+}
+li,a,button{
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    color: white;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #1B3A57;
+}
+.header{
+    font-family: "Rubik Vinyl", serif;
+    color: white;
+    font-size: 35px;
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px,20px;
+    margin:10px;
+    
+}
+.nav_links{
+
+cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+.nav_links a:hover{
+    color: rgb(38, 218, 250);
+}
+.nav_links i:hover{
+    color: rgb(38, 218, 250);
+}
+.cta{
+    padding: 9px 25px;
+    background-color: #1B3A57;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+.cta:hover{
+    background-color: white;
+    color: black;
+}
+p{
+    background-color: #2e2e2e;
+    width: 100%;
+    padding: 10px 10px;
+    text-align: center;
+    font-family: "Montserrat", serif;
+    color: white;
+    font-weight: 400;
+}
+h4{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+   font-family: "Dancing Script", serif;
+   color: black;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+input{
+    width: 55%;
+    margin:11px;
+    padding: 10px;
+    font-size: 16px;
+    
+    margin: 11px auto;
+    
+}
+.select{
+    width: 55%;
+    margin:11px;
+    padding: 10px;
+    font-size: 16px;
+    margin: 11px auto;
+
+   
+}
+body{
+    background-size: cover;
+background-image: url(bg2.jpg);
+
+}
+.a{
+    margin-right: 50%;
+    margin-bottom: -9px;
+}
+.b{
+    margin-right: 49%;
+    margin-bottom: -9px;
+}
+.c{
+    margin-right: 49%;
+    margin-bottom: -9px;
+}
+.d{
+    margin-right: 49%;
+    margin-bottom: -9px;
+}
+.e{
+    margin-right: 51%;
+    margin-bottom: -9px;
+}
+.f{
+    margin-left: -4%;
+    margin-bottom: -9px;
+}
+.h{
+margin-right: 47%;
+margin-bottom: -9px;
+}
+.y{
+    margin-right: 39%;
+    margin-bottom: 2px;
+}
+.z{
+    margin-right: 43%;
+    margin-bottom: -9px;
+}
+.k{
+    margin-right: 50%;
+    margin-bottom: -9px;
+}
+.g{
+    margin-right: 43%;
+    margin-bottom: -9px;
+}
+label {
+    display: block;
+    font-size: 23px;
+    
+   font-family: 'Times New Roman', Times, serif;
+    color: black;
+    margin-right: 40%;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+select {
+    width: 55%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
+input[type="file"],
+select {
+    width: 55%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    
+}
+
+.btn{
+   border: 0;
+    width: 55%;
+    background: #1B3A57;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px 12px;
+    transition: all 0.3s ease 0s;
+    color: white;
+    border: 2px solid black;
+    font-family: "Montserrat", serif;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 17px;
+    box-shadow: 0px 1px 3px black;
+}
+
+.btn:hover{
+    color: white;
+    background-color: #136b89;
+}
+.popup{
+    width:50%;
+    background-image: url(pencil1.jpg);
+    background-size: cover;
+    background-blend-mode:lighten;
+    border: 2px solid black;
+    border-radius: 12px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+   visibility: hidden;
+    transition: transform 0.4s, top 0.5s;
+}
+.open-popup{
+    visibility: visible;
+    top: 60%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup img{
+    width: 250px;
+    margin-top: -60px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2{
+    font-size: 40px;
+    font-weight: 800;
+    margin :30px 0 10px;
+    font-family: "Dancing Script", serif;
+    color: black;
+}
+.popup button{
+    width: 20%;
+    margin-top: 10px;
+    padding: 10 px 0;
+    background-color: rgb(255, 184, 92);
+    color: black;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+   margin-left: 80%;
+}
+.popup h6{
+    font-size: 15px;
+    font-weight: 700;
+    font-family:  "Montserrat", serif;
+    color: rgb(12, 0, 0);
+}
+.popup h5{
+    color: black;
+    text-align: left;
+    font-family:  "Montserrat", serif;
+    font-size: 19px;
+    font-weight: 500;
+    
+}
+.popup h5 i{
+    padding-right: 12px;
+    margin-top: 10px;
+}
+.popup button:hover{
+    background-color: rgb(219, 155, 16);
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+    text-align: center;
+    border-radius: 10px;
+}
+
+.modal-content h3 {
+    margin-bottom: 20px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

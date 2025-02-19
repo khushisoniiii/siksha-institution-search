@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+ES+Deco+Guides&family=Rubik+Vinyl&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+ }
+ .aboutus{
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+   padding-top: 10px;
+    font-family: "Dancing Script", serif;
+ }
+.quote{
+    color: white;
+    text-align: center;
+    font-size: 19px;
+}
+.quote2{
+    color: white;
+    padding-top: 15%;
+    font-size: 31px;
+    padding-left: 40px;
+    color: rgb(245, 194, 132);
+    font-family: "Montserrat", serif;
+    
+}
+hr{
+    width: 100%;
+    height: 3px;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px,20px;
+    margin:10px;
+    
+}
+p{
+    line-height: 2;
+    font-size: 17px;
+    padding-left: 40px;
+    color: white;
+}
+
+marquee{
+    color: white;
+    margin-left: 40%;
+    font-family: "Rubik Vinyl", serif;
+    margin-top:40px;
+    font-weight: 700;
+    font-size: 50px;
+}
+h3{
+   
+    font-family: "Montserrat", serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.topic{
+    color: wheat;
+    font-weight: 800;
+}
+h2{
+    font-size: 60px;
+    font-family: "Dancing Script", serif;
+    text-align: center;
+    color: white;
+    padding-top: 12px;
+}
+.center{
+    text-align: center;
+    margin-bottom: 30px;
+    width: 80%;
+    margin-left: 110px; 
+    color: white;
+    line-height: 2;
+    font-size: 19px;
+}
+.conn1{
+    width: 70%;
+    background-color: rgb(3, 3, 98);
+    border-radius: 1px;
+    color: white;
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 120px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+a{
+    color: white;
+    padding-left: 35%;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+a:hover{
+    color: crimson;
+}
+i{
+ padding-left: 10%;
+}
+.conn2{
+    width: 70%;
+    background-color: rgb(3, 3, 98);
+    border-radius: 1px;
+    color: white;
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 120px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.conn3{
+    width: 70%;
+    background-color: rgb(3, 3, 98);
+    border-radius: 1px;
+    color: white;
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 120px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.conn4{
+    width: 70%;
+    background-color: rgb(3, 3, 98);
+    border-radius: 1px;
+    color: white;
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 120px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.conn5{
+    width: 70%;
+    background-color: rgb(3, 3, 98);
+    border-radius: 1px;
+    color: white;
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 120px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.conn6{
+    width: 70%;
+    background-color: rgb(3, 3, 98);
+    border-radius: 1px;
+    color: white;
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 120px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.CONN7{
+    width: 70%;
+    background-color: rgb(3, 3, 98);
+    border-radius: 1px;
+    color: white;
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 120px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.head{
+    font-family: "Dancing Script", serif;
+    color: white;
+    font-size: 35px;
+    font-weight: 400;
+    padding-left: 30px;
+    padding-top: 80px;
+
+}
+
+ .footer{
+    background-color: black;
+    width: 100%;
+    height: 50%;
+    margin-top: 25px;
+    margin-bottom: 0;
+    height: 50px;
+ }
+ h3{
+    font-family: "Dancing Script", serif;
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+    padding-left: 45px;
+    padding-top: 80px;
+ 
+ }
+ .menu li{
+    color: white;
+    padding-left: 50px;
+    font-family: "Montserrat", serif;
+    font-size: 26;
+    padding-bottom: 10px;
+  
+ 
+ }
+ hr{
+    color: white;
+ }
+ .headers{
+    background-image: url(about.jpg);
+    background-size: cover;
+    height: 90%;
+ }
+ li,a,button{
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 21px;
+    color: black;
+    text-decoration: none;
+    color: white;
+    margin-right: 58px;
+    padding-top: 19px;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   height: 80px;
+    background-color: rgb(4, 4, 109);
+}
+.header{
+    font-family: "Rubik Vinyl", serif;
+    color: white;
+    font-size: 35px;
+    padding-left: 40px;
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px,20px;
+    margin:10px;
+    font-size: 50px;
+    margin-left: 30px;
+    
+}
+.nav_links li i{
+    display: inline-block;
+
+cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+.nav_links a:hover{
+    color: rgb(38, 218, 250);
+}
+.nav_links i:hover{
+    color: rgb(38, 218, 250);
+}
+.cta{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(255, 161, 37);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: black;
+    font-size: 14px;
+}
+.cta:hover{
+    background-color: chocolate;
+}
+.bg{
+    background-image: url(bg.jpg);
+    background-size: cover;
+}
+.popup{
+    width:50%;
+    background-image: url(pencil1.jpg);
+    background-size: cover;
+    background-blend-mode:lighten;
+    border: 2px solid black;
+    border-radius: 12px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+   visibility: hidden;
+    transition: transform 0.4s, top 0.5s;
+}
+.open-popup{
+    visibility: visible;
+    top: 60%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup img{
+    width: 250px;
+    margin-top: -60px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2{
+    font-size: 40px;
+    font-weight: 800;
+    margin :30px 0 10px;
+    font-family: "Dancing Script", serif;
+    color: black;
+}
+.popup button{
+    width: 20%;
+    margin-top: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(255, 184, 92);
+    color: black;
+    border: 0;
+    outline: none;
+    font-size: 22px;
+    font-weight: 400;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+   margin-left: 80%;
+}
+.popup h6{
+    font-size: 15px;
+    font-weight: 700;
+    font-family:  "Montserrat", serif;
+    color: rgb(12, 0, 0);
+}
+.popup h5{
+    color: black;
+    text-align: left;
+    font-family:  "Montserrat", serif;
+    font-size: 19px;
+    font-weight: 500;
+    
+}
+.popup h5 i{
+    padding-right: 12px;
+    margin-top: 10px;
+}
+.popup button:hover{
+    background-color: rgb(219, 155, 16);
+}
+footer{
+    background: #343434;
+    
+}
+.container{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.footer-content{
+    width: 33.3%;
+    padding-top: 2px;
+}
+footer h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.footer-content p{
+    width:190px;
+    margin: auto;
+    padding: 7px;
+}
+.footer-content ul{
+    text-align: center;
+}
+.list{
+    padding: 0;
+}
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type:none;
+    padding: 7px;
+    position: relative;
+}
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 60%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #f18930;
+    transition-duration: .5s;
+}
+.list li:hover::before{
+    width: 70px;
+}
+.social-icons{
+    text-align: center;
+    
+    padding: 0;
+}
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.social-icons i{
+    color: white;
+    font-size: 35px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #f18930;
+}
+.social-icons i:hover{
+    color: #f18930;
+}
+.bottom-bar{
+    background: #f18930;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.bottom-bar p{
+    color: #343434;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+    font-weight: 400;
+}

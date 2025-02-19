@@ -1,0 +1,236 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: arial, sans-serif;
+	
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 30px;
+	background: #23242b;
+	color: #fff;
+}
+.u-name {
+	font-size: 20px;
+	padding-left: 17px;
+}
+.u-name b {
+	color: #127b8e;
+}
+.header i {
+	font-size: 30px;
+	cursor: pointer;
+	color: #fff;
+}
+.header i:hover {
+	color: #127b8e;
+}
+.user-p {
+	text-align: center;
+	padding-left: 10px;
+	padding-top: 25px;
+}
+.user-p img {
+	width: 100px;
+	border-radius: 50%;
+	margin-left: 70px;
+}
+.user-p h4 {
+	color: #63d0fb;
+	padding: 5px 0;
+	font-size: 18px;
+	font-family:monospace;
+
+}
+.side-bar {
+	width: 250px;
+	background: #262931;
+	min-height: 250vh;
+	transition: 500ms width;
+	
+}
+.container h2{
+    text-align: center;
+}
+.body {
+	display: flex;
+	min-height: 100vh;
+	
+	
+}
+.section-1 {
+	width: 100%;
+	flex-direction: column;
+    justify-content: flex-start;
+	
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.section-1 h1 {
+	color: black;
+	font-size: 30px;
+	text-align: center;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
+.section-1 marquee{
+	text-align: center;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 24px;
+	margin-top: 10px;
+	
+
+}
+
+.side-bar ul {
+	margin-top: 20px;
+	list-style: none;
+}
+.side-bar ul li {
+	font-size: 16px;
+	padding: 15px 0px;
+	padding-left: 20px;
+	transition: 500ms background;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.side-bar ul li:hover {
+	background: #127b8e;
+}
+.side-bar ul li a {
+	text-decoration: none;
+	color: #eee;
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+.side-bar ul li a i {
+	display: inline-block;
+	padding-right: 10px;
+	font-size: 23px;
+}
+#navbtn {
+	display: inline-block;
+	margin-left: 70px;
+	font-size: 20px;
+	transition: 500ms color;
+}
+#checkbox {
+	display: none;
+}
+#checkbox:checked ~ .body .side-bar {
+	width: 60px;
+}
+#checkbox:checked ~ .body .side-bar .user-p{
+	visibility: hidden;
+}
+#checkbox:checked ~ .body .side-bar a span{
+	display: none;
+}
+.section-1 {
+    margin: 0;
+    padding: 20px;
+    width: calc(100% - 250px);
+    position: absolute;
+    left: 250px;
+    background: #f9f9f9;
+    box-sizing: border-box;
+    
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+#checkbox:checked ~ .body .section-1 {
+    width: calc(100% - 60px);
+    left: 60px;
+}
+form {
+    display: inline-block; /* Ensures buttons appear inline */
+    margin-right: 5px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 5px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px black;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.2);
+}
+
+.mb-3 {
+    margin-bottom: 20px;
+}
+
+select.form-control {
+    cursor: pointer;
+}
+
+button.btn-primary {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button.btn-primary:hover {
+    background: #0056b3;
+}
+
+img {
+    display: block;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+

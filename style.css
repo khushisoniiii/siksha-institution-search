@@ -1,0 +1,265 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+        background-color: pink; /* Light grey background color */
+        font-family: Arial, sans-serif; /* Add a font family */
+        color: #333; /* Text color */
+    }
+
+
+h1, h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+
+header {
+    background: linear-gradient(to right, #0066cc, #00b3e6); /* Gradient background */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #0066cc;
+}
+
+header nav ul li a:hover {
+    color: #4CAF50;
+}
+
+
+
+header .logo h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* New font style */
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #4CAF50;
+}
+
+header nav ul li a.login-btn {
+    background-color: #ff6600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a.login-btn:hover {
+    background-color: #cc5200;
+}
+
+/* Main Section */
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+/* Section Containers */
+.section-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #0066cc;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Courses List */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Call to Action Button (Apply Now) */
+.cta-btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #45a049;
+}
+
+/* Contact Info */
+ul li strong {
+    font-weight: bold;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Admin Login Section */
+.admin-login-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.admin-login-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #4CAF50;
+}
+/* Style the dropdown container */
+header nav ul li.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button style */
+header nav ul li .dropbtn {
+    color: white;
+    font-size: 18px;
+    padding: 14px 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Dropdown content (hidden by default) */
+header nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+header nav ul li .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show the dropdown content on hover */
+header nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+/* Change color when hovering over dropdown links */
+header nav ul li .dropdown-content a:hover {
+    background-color: #4CAF50;
+}
+/* Navbar for Mobile (Hamburger) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar .hamburger i {
+    color: white;
+    font-size: 30px;
+}
+
+/* Hide the navigation links on mobile */
+#nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+/* When the hamburger menu is clicked, show the nav links */
+@media (max-width: 768px) {
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #333;
+    }
+
+    #nav-links li {
+        margin: 15px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    #nav-links.active {
+        display: flex;
+    }
+}
+

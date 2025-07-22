@@ -11,6 +11,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+
 ?>
 
 
@@ -20,7 +21,7 @@ if ($conn->connect_error) {
 	<title>Dashboard</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="reports.css">
+	<link rel="stylesheet" href="report.css">
 </head>
 <body>
 	<input type="checkbox" id="checkbox">
@@ -110,11 +111,27 @@ if ($conn->connect_error) {
         }
     </script>
     <button onclick="printPage()">Print Page</button>
+	<div class="search">
+    <i class="fas fa-search"></i>
+    <form action="" method="GET">
+        <input type="text" name="q" placeholder="Search">
+    </form>
+</div>
+
+    </div>
         <tbody>
+			
         <main>
         <?php
+		
         
 $sql = "SELECT name, area_name, pincode, district_name, state_name, email, contact_number, landmark, block_name, batch, avatar FROM users WHERE approve = 'approved'";
+$result = $conn->query($sql);
+if(isset($_GET["q"])){
+	$q = $_GET["q"];
+
+	$sql = "SELECT id, name, area_name, pincode, district_name, state_name, email, contact_number, landmark, block_name, batch, avatar FROM users WHERE approve = 'approved' AND (name LIKE '%$q%' OR area_name LIKE '%$q%')";
+}
 $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {

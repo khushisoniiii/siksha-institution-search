@@ -241,6 +241,12 @@ a{
    width: 300px;
    overflow: hidden;
    box-shadow: 0 4px 10px black;
+   transition: 1s;
+   cursor: pointer;
+}
+.data-card:hover{
+   transform: scale(1.1);
+   z-index: 1;
 }
 
 .data-card .avatar {
@@ -273,9 +279,23 @@ a{
 }
 
 a.view_btn{
-   background-color: #2e2e2e;
+    background: #0c80ed;
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 200;
+    margin-left: 77px;
+    border-radius: 4px;
 }
-
+a.view_btn:hover{
+    background-color: white;
+    color:#0c80ed ;
+    border: 1px solid #0c80ed;
+}
 
 /* css for about section */
 

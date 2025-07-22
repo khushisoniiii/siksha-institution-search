@@ -1,0 +1,196 @@
+/* body{
+    background-size: cover;
+background-image: url(back.jpg);
+
+} */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+ES+Deco+Guides&family=Rubik+Vinyl&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+ }
+.details-container {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 17px;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: 1px 2px 4px 0 rgb(97, 94, 94);
+}
+h2{
+    font-family: fangsong;
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(4, 4, 109);
+    margin-bottom: 10px;
+}
+
+.details-container img {
+    width: 675px;
+    height: 335px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 20px;
+    background-color: #c9303e;
+    color: white;
+    border: 1px solid white;
+   font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 578px;
+    
+}
+
+.back-btn:hover {
+    background-color: white;
+    color: #c9303e;
+    border: 1px solid #c9303e;
+}
+
+/* nav bar */
+.header h4{
+    font-family: "Rubik Vinyl", serif;
+     color: rgb(4, 4, 109);
+     font-size: 25px;
+    font-weight: 600;
+  }
+  .adv{
+    font-size: 18px;
+    color: black;
+    padding-right: 25px;
+    font-family: monospace;
+    padding-left: 44px;
+    
+  }
+  .header{
+     background-color:  white;
+     color: white;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-left: 25px;
+     padding-bottom: 25px;
+     
+  }
+  .nav_links li a{
+    text-decoration: none;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 21px;
+    color: rgb(4, 4, 109);
+    margin-left: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0px;
+    margin-top: 4px;
+  }
+  li a:hover{
+     background: #d4d0d0;
+     transition: 0.5s;
+  }
+  .nav_links a:hover{
+     color: black;
+  }
+  .nav_links{
+    list-style: none;
+ }
+ .nav_links li{
+    display: inline-block;
+    padding-left: 11px;
+    font-size: 28px;
+ }
+ .icon{
+    color: black;
+    font-size: 28px;
+    padding-left: 750px;
+ }
+ p{
+    font-size: 21px;
+    line-height: 1.3;
+    
+ }
+ /* star rating */
+ .star-rating {
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+}
+
+.star-rating i {
+    transition: color 0.3s;
+}
+
+.star-rating i.selected {
+    color: gold;
+}
+.rate{
+    font-family: monospace;
+    font-size: 23px;
+}
+.submit{
+    padding: 10px 15px;
+    margin-top: 20px;
+    background-color: #0861a5;
+    color: white;
+    border: 1px solid white;
+   font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: white;
+    color: #0861a5;
+    border: 1px solid #0861a5;
+}
+/* .location{
+    color: black;
+    font-size: 17px;
+    font-family:serif;
+    padding-left: 18px;
+    padding-right: 60px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 2px solid #ddd;
+    background: #f9f9f9;
+    box-shadow: 1px 2px 4px 0 rgb(97, 94, 94);
+    border-radius: 5px;
+    margin-top: 10px;
+    
+} */
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.location-icon {
+    width: 20px;  /* Adjust size as needed */
+    height: auto;
+    margin-right: 5px;
+}
+.location p{
+    color: black;
+    font-size: 18px;
+    font-family:serif;
+    padding-left: 18px;
+    padding-right: 60px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 2px solid #ddd;
+    background: #f9f9f9;
+    box-shadow: 1px 2px 4px 0 rgb(97, 94, 94);
+    border-radius: 5px;
+    margin-top: 10px;
+}

@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet"  href="index.css">
+   <link rel="stylesheet"  href="ho.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="icon" href="mylogoof.png">
    <title>Siksha</title>
@@ -54,12 +54,12 @@ if ($conn->connect_error) {
   <div class="product" id="products"><main>
     <?php
 
-    $sql = "SELECT name, area_name, pincode, district_name, state_name, email, contact_number, landmark, block_name, batch, avatar FROM users WHERE approve = 'approved'";
+    $sql = "SELECT id, name, area_name, pincode,  district_name, email, batch, avatar FROM users WHERE approve = 'approved'";
     
     if(isset($_GET["q"])){
         $q = $_GET["q"];
 
-        $sql = "SELECT name, area_name, pincode, district_name, state_name, email, contact_number, landmark, block_name, batch, avatar FROM users WHERE approve = 'approved' AND (batch LIKE '%$q%' OR area_name LIKE '%$q%')";
+        $sql = "SELECT id, name, area_name, pincode, district_name, state_name, email, contact_number, landmark, block_name, batch, avatar FROM users WHERE approve = 'approved' AND (batch LIKE '%$q%' OR area_name LIKE '%$q%')";
     }
 
     $result = $conn->query($sql);
@@ -73,16 +73,22 @@ if ($conn->connect_error) {
             echo "<h3>" . htmlspecialchars($row["name"]) . "</h3>";
             echo "<p><strong>Area:</strong> " . htmlspecialchars($row["area_name"]) . "</p>";
             echo "<p><strong>Pincode:</strong> " . htmlspecialchars($row["pincode"]) . "</p>";
+          
             echo "<p><strong>District:</strong> " . htmlspecialchars($row["district_name"]) . "</p>";
-            echo "<p><strong>State:</strong> " . htmlspecialchars($row["state_name"]) . "</p>";
             echo "<p><strong>Email:</strong> " . htmlspecialchars($row["email"]) . "</p>";
-            echo "<p><strong>Contact:</strong> " . htmlspecialchars($row["contact_number"]) . "</p>";
-            echo "<p><strong>Landmark:</strong> " . htmlspecialchars($row["landmark"]) . "</p>";
-            echo "<p><strong>Block:</strong> " . htmlspecialchars($row["block_name"]) . "</p>";
+            
+            
+           
             echo "<p><strong>Batch:</strong> " . htmlspecialchars($row["batch"]) . "</p>";
+              // View More button
+              
+              echo "<br><a href='details.php?id=" . $row['id'] . "' class='view_btn'>View More <i class='fas fa-arrow-right'></i></a>";
+
             echo "</div>";
             echo "</div>";
+           
         }
+        
         echo "</div>";
     } else {
         echo "<p>No approved users found.</p>";
@@ -170,7 +176,7 @@ if ($conn->connect_error) {
                 </div>
         </div>
         <div class="bottom-bar">
-            <p>&copy; 2023 Siksha . All rights reserved</p>
+            <p>&copy; 2024 Siksha . All rights reserved</p>
         </div>
     </footer>
     
